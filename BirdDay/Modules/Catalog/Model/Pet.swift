@@ -7,7 +7,8 @@ struct Pet: Identifiable, Equatable {
     var species: String
     var notes: String
     var date: Date
-    var isArchived = false 
+    var diaryNote: String
+    var isArchived = false
     
     var isClose: Bool {
         image == nil || name == "" || species == "" || notes == ""
@@ -18,7 +19,8 @@ struct Pet: Identifiable, Equatable {
         self.name = isTrue ? "" : "Fluffykins"
         self.species = isTrue ? "" : "Dog"
         self.notes = isTrue ? "" : "Loves to cuddle."
-        self.isArchived = isTrue ? false : true 
+        self.isArchived = isTrue ? false : true
+        self.diaryNote = isTrue ? "" : "Today was a good day!"
         self.date = Date()
     }
     
@@ -29,6 +31,7 @@ struct Pet: Identifiable, Equatable {
         self.species = ud.species
         self.notes = ud.notes
         self.date = ud.date
+        self.diaryNote = ud.diaryNote
         self.isArchived = ud.isArchived
     }
 }

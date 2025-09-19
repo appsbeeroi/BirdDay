@@ -209,3 +209,6 @@ struct PetDetailView: View {
 #Preview {
     PetDetailView(pet: Pet(isTrue: false)) { _ in } removeAction: { _ in }
 }
+
+
+

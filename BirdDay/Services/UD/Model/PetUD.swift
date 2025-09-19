@@ -7,6 +7,7 @@ struct PetUD: Codable {
     var species: String
     var notes: String
     var date: Date
+    var diaryNote: String
     var isArchived: Bool
     
     init(from model: Pet, and imagePath: String) {
@@ -16,6 +17,7 @@ struct PetUD: Codable {
         self.species = model.species
         self.notes = model.notes
         self.date = model.date
+        self.diaryNote = model.diaryNote
         self.isArchived = model.isArchived
     }
 }

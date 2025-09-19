@@ -4,13 +4,9 @@ final class UDManager {
     
     static let shared = UDManager()
     
-    private let defaults: UserDefaults
+    private let defaults = UserDefaults.standard
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
-    
-    private init(defaults: UserDefaults = .standard) {
-        self.defaults = defaults
-    }
     
     func set<T: Codable>(_ value: T, for key: UDKeys) {
         do {
