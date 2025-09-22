@@ -49,7 +49,7 @@ final class CatalogViewModel: ObservableObject {
             guard let image = pet.image,
                   let imagePath = await self.imageManager.save(image, with: pet.id) else { return }
             
-            if let index = self.pets.firstIndex(where: { $0.id == pet.id }) {
+            if let index = allPets.firstIndex(where: { $0.id == pet.id }) {
                 allPets[index] = PetUD(from: pet, and: imagePath)
             } else {
                 allPets.append(PetUD(from: pet, and: imagePath))

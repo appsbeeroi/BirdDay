@@ -87,7 +87,6 @@ struct DiaryView: View {
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 31)
-            .padding(.horizontal, 27)
             .background(.white)
             .cornerRadius(25)
             

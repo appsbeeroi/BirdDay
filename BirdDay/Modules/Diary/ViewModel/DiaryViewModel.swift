@@ -52,7 +52,7 @@ final class DiaryViewModel: ObservableObject {
             guard let image = diary.image,
                   let imagePath = await self.imageManager.save(image, with: diary.id) else { return }
             
-            if let index = self.diaries.firstIndex(where: { $0.id == diary.id }) {
+            if let index = allDiaries.firstIndex(where: { $0.id == diary.id }) {
                 allDiaries[index] = DiaryNoteUD(from: diary, and: imagePath)
             } else {
                 allDiaries.append(DiaryNoteUD(from: diary, and: imagePath))

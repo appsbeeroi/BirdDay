@@ -91,8 +91,8 @@ struct CatalogView: View {
                     
                     Text("Add a first friend to start keeping\na diary!")
                         .font(.purse(with: 16))
-                        .foregroundStyle(.black)
                         .multilineTextAlignment(.center)
+                        .foregroundStyle(.customGray)
                 }
                 
                 Image(.Images.Catalog.aviary)

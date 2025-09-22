@@ -74,7 +74,11 @@ final class CalendarViewModel: ObservableObject {
         $searchedText
             .sink { [weak self] text in
                 guard let self else { return }
-                self.birhdatePets = text == "" ? self.birhdatePets : birhdatePets.filter { $0.name.contains(text) || $0.species.contains(text) }
+                self.filterPets(by: currentDate)
+                
+                if text != "" {
+                    self.birhdatePets = birhdatePets.filter { $0.name.contains(text) || $0.species.contains(text) }
+                }
             }
             .store(in: &cancellable)
     }
