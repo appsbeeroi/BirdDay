@@ -18,9 +18,11 @@ struct PetDetailView: View {
             VStack(spacing: 16) {
                 navigation
                 
-                VStack(spacing: 16) {
-                    image
-                    petInfo
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 16) {
+                        image
+                        petInfo
+                    }
                 }
             }
             .frame(maxHeight: .infinity, alignment: .top)

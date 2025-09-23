@@ -10,7 +10,7 @@ struct SplashScreen: View {
                 .aduptImage()
             
             VStack(spacing: 10) {
-                StrokeText("BirdDay", fontSize: 64)
+                StrokeText("Bird Day\nDiary", fontSize: 64)
                 
                 ProgressView()
             }

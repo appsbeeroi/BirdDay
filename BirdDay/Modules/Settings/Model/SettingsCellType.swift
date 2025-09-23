@@ -5,13 +5,12 @@ enum SettingsCellType: Identifiable, CaseIterable {
     case privacy
     case aboutDeveloper
     
-    #warning("доки")
     var urlString: String {
         switch self {
             case .privacy:
-                "https://mail.google.com/mail/u/0/#inbox"
+                "https://sites.google.com/view/birddays/privacy-policy"
             case .aboutDeveloper:
-                "https://mail.google.com/mail/u/0/#inbox"
+                "https://sites.google.com/view/birddays/home"
             default:
                 ""
         }

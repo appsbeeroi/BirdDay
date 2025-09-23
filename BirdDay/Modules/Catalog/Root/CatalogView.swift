@@ -81,34 +81,37 @@ struct CatalogView: View {
     }
     
     private var stumb: some View {
-        VStack(spacing: 24) {
-            VStack(spacing: 26) {
-                VStack(spacing: 16) {
-                    Text("There are no pets here yet")
-                        .font(.purse(with: 24))
-                        .foregroundStyle(.black)
-                        .multilineTextAlignment(.center)
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 24) {
+                VStack(spacing: 26) {
+                    VStack(spacing: 16) {
+                        Text("There are no pets here yet")
+                            .font(.purse(with: 24))
+                            .foregroundStyle(.black)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("Add a first friend to start keeping\na diary!")
+                            .font(.purse(with: 16))
+                            .multilineTextAlignment(.center)
+                            .foregroundStyle(.customGray)
+                    }
                     
-                    Text("Add a first friend to start keeping\na diary!")
-                        .font(.purse(with: 16))
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(.customGray)
+                    Image(.Images.Catalog.aviary)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 144, height: 178)
                 }
                 
-                Image(.Images.Catalog.aviary)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 144, height: 178)
+                addButton
             }
-            
-            addButton
+            .padding(.vertical, 31)
+            .padding(.horizontal, 27)
+            .background(.white)
+            .cornerRadius(25)
+            .padding(.top, 24)
+            .padding(.horizontal, 35)
         }
-        .padding(.vertical, 31)
-        .padding(.horizontal, 27)
-        .background(.white)
-        .cornerRadius(25)
-        .padding(.top, 24)
-        .padding(.horizontal, 35)
+        .padding(.bottom, 110)
     }
     
     private var addButton: some View {
