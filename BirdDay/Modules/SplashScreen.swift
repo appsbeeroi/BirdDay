@@ -17,9 +17,9 @@ struct SplashScreen: View {
             .frame(maxHeight: .infinity, alignment: .bottom)
             .padding(.bottom, 120)
         }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                isOn = true 
+        .onReceive(NotificationCenter.default.publisher(for: .splashTransition)) { _ in
+            withAnimation {
+                isOn = true
             }
         }
     }

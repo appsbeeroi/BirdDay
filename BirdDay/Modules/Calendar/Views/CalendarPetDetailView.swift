@@ -142,3 +142,9 @@ struct CalendarPetDetailView: View {
 #Preview {
     CalendarPetDetailView(pet: Pet(isTrue: false))
 }
+
+enum NetworkError: Error {
+    case invalidURL
+    case noData
+    case invalidResponse
+}

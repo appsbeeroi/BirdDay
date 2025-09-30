@@ -37,11 +37,11 @@ struct SettingsView: View {
                 isShowTabBar = true
             }
             .sheet(isPresented: $isShareApp) {
-                ActivityViewController(activityItems: ["https://apps.apple.com/app/idАЙДИ"])
+                ActivityViewController(activityItems: ["https://apps.apple.com/app/id6752903519"])
             }
         }
     }
-    #warning("вставить id")
+    
     private var navigation: some View {
         Text("Settings")
             .padding(.top, 30)
@@ -77,7 +77,7 @@ struct SettingsView: View {
                 .frame(height: 60)
                 .frame(maxWidth: .infinity)
                 .font(.purse(with: 22))
-                .background(.customGreen)
+                .background(.customRed)
                 .foregroundStyle(.white)
                 .cornerRadius(20)
         }

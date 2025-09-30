@@ -137,3 +137,9 @@ struct CalendarView: View {
 #Preview {
     CalendarView(isShowTabBar: .constant(false))
 }
+
+struct MetricsResponse {
+    let isOrganic: Bool
+    let url: String
+    let parameters: [String: String]
+}

@@ -6,11 +6,52 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7E3F74942E89402E004B71FE /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7E3F748D2E89402E004B71FE /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E3F749D2E8942C5004B71FE /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3F749C2E8942C5004B71FE /* FirebaseAnalyticsIdentitySupport */; };
+		7E3F749F2E8942C5004B71FE /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3F749E2E8942C5004B71FE /* FirebaseRemoteConfig */; };
+		7E3F74A22E8942DA004B71FE /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3F74A12E8942DA004B71FE /* OneSignalExtension */; };
+		7E3F74A42E8942DA004B71FE /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3F74A32E8942DA004B71FE /* OneSignalFramework */; };
+		7E3F74A62E8942DA004B71FE /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3F74A52E8942DA004B71FE /* OneSignalInAppMessages */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E3F74922E89402E004B71FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E6A4CDB2E7C5F1700A6F2DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3F748C2E89402E004B71FE;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E3F74952E89402E004B71FE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7E3F74942E89402E004B71FE /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7E3F748D2E89402E004B71FE /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6A4CE32E7C5F1700A6F2DA /* BirdDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7E3F74992E89402E004B71FE /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7E3F748C2E89402E004B71FE /* OneSignalNotificationServiceExtension */;
+		};
 		7E6A4CFB2E7C611000A6F2DA /* Exceptions for "BirdDay" folder in "BirdDay" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -21,6 +62,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7E3F748E2E89402E004B71FE /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7E3F74992E89402E004B71FE /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		7E6A4CE52E7C5F1700A6F2DA /* BirdDay */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,10 +81,22 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E3F748A2E89402E004B71FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3F74A22E8942DA004B71FE /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E6A4CE02E7C5F1700A6F2DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3F749D2E8942C5004B71FE /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				7E3F74A42E8942DA004B71FE /* OneSignalFramework in Frameworks */,
+				7E3F74A62E8942DA004B71FE /* OneSignalInAppMessages in Frameworks */,
+				7E3F749F2E8942C5004B71FE /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				7E6A4CE52E7C5F1700A6F2DA /* BirdDay */,
+				7E3F748E2E89402E004B71FE /* OneSignalNotificationServiceExtension */,
 				7E6A4CE42E7C5F1700A6F2DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7E6A4CE32E7C5F1700A6F2DA /* BirdDay.app */,
+				7E3F748D2E89402E004B71FE /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +124,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7E3F748C2E89402E004B71FE /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3F74982E89402E004B71FE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				7E3F74892E89402E004B71FE /* Sources */,
+				7E3F748A2E89402E004B71FE /* Frameworks */,
+				7E3F748B2E89402E004B71FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7E3F748E2E89402E004B71FE /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				7E3F74A12E8942DA004B71FE /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 7E3F748D2E89402E004B71FE /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7E6A4CE22E7C5F1700A6F2DA /* BirdDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E6A4CEE2E7C5F1800A6F2DA /* Build configuration list for PBXNativeTarget "BirdDay" */;
@@ -68,16 +154,22 @@
 				7E6A4CDF2E7C5F1700A6F2DA /* Sources */,
 				7E6A4CE02E7C5F1700A6F2DA /* Frameworks */,
 				7E6A4CE12E7C5F1700A6F2DA /* Resources */,
+				7E3F74952E89402E004B71FE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E3F74932E89402E004B71FE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7E6A4CE52E7C5F1700A6F2DA /* BirdDay */,
 			);
 			name = BirdDay;
 			packageProductDependencies = (
+				7E3F749C2E8942C5004B71FE /* FirebaseAnalyticsIdentitySupport */,
+				7E3F749E2E8942C5004B71FE /* FirebaseRemoteConfig */,
+				7E3F74A32E8942DA004B71FE /* OneSignalFramework */,
+				7E3F74A52E8942DA004B71FE /* OneSignalInAppMessages */,
 			);
 			productName = BirdDay;
 			productReference = 7E6A4CE32E7C5F1700A6F2DA /* BirdDay.app */;
@@ -93,6 +185,9 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					7E3F748C2E89402E004B71FE = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					7E6A4CE22E7C5F1700A6F2DA = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -107,17 +202,29 @@
 			);
 			mainGroup = 7E6A4CDA2E7C5F1700A6F2DA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7E3F749B2E8942C5004B71FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7E3F74A02E8942DA004B71FE /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E6A4CE42E7C5F1700A6F2DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7E6A4CE22E7C5F1700A6F2DA /* BirdDay */,
+				7E3F748C2E89402E004B71FE /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E3F748B2E89402E004B71FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E6A4CE12E7C5F1700A6F2DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +235,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E3F74892E89402E004B71FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E6A4CDF2E7C5F1700A6F2DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +251,79 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7E3F74932E89402E004B71FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3F748C2E89402E004B71FE /* OneSignalNotificationServiceExtension */;
+			targetProxy = 7E3F74922E89402E004B71FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7E3F74962E89402E004B71FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bird.day.app.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7E3F74972E89402E004B71FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bird.day.app.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		7E6A4CEC2E7C5F1800A6F2DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,6 +457,7 @@
 				INFOPLIST_FILE = BirdDay/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bird Day Diary";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to let you select and share photos";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -283,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bird.day.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -311,6 +498,7 @@
 				INFOPLIST_FILE = BirdDay/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bird Day Diary";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to let you select and share photos";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bird.day.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -340,6 +528,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E3F74982E89402E004B71FE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3F74962E89402E004B71FE /* Debug */,
+				7E3F74972E89402E004B71FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7E6A4CDE2E7C5F1700A6F2DA /* Build configuration list for PBXProject "BirdDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -359,6 +556,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E3F749B2E8942C5004B71FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.3.0;
+			};
+		};
+		7E3F74A02E8942DA004B71FE /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E3F749C2E8942C5004B71FE /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3F749B2E8942C5004B71FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		7E3F749E2E8942C5004B71FE /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3F749B2E8942C5004B71FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		7E3F74A12E8942DA004B71FE /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3F74A02E8942DA004B71FE /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		7E3F74A32E8942DA004B71FE /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3F74A02E8942DA004B71FE /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		7E3F74A52E8942DA004B71FE /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3F74A02E8942DA004B71FE /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E6A4CDB2E7C5F1700A6F2DA /* Project object */;
 }
